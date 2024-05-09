@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 
 html,
@@ -11,19 +12,46 @@ body {
 
 html {
   background: #f2f2f2;
-  font-family:
-    'Segoe UI',
-    'Segoe UI Web (West European)',
-    'Segoe UI',
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gotham';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   height: 100%;
+}
+
+/* Share button dialogue box */
+.ms-Dialog-main{
+    background-color: #0093a7;
+}
+
+.ms-Dialog-title {
+  font-size: 14px;
+  color: #eef4f6;
+}
+.ms-Dialog-header .topButton-152{
+  padding: 9px 9px 0px 0px;
+
+}
+
+.ms-Dialog-header button {
+    color: #eef4f6 !important;
+    padding: 0;
+ 
+}
+   .ms-Dialog-header button:hover{
+        color: #eef4f6;
+    }
+
+.inner-154 {
+  padding: 0px 15px 24px;
+}
+
+.ms-Dialog-button--close:hover {
+  background: none;
+}
+
+.ms-TextField-fieldGroup{
+border: none;
 }

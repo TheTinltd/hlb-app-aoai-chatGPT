@@ -4,7 +4,6 @@ import { Dialog, Stack, TextField } from '@fluentui/react'
 import { CopyRegular } from '@fluentui/react-icons'
 
 import { CosmosDBStatus } from '../../api'
-import Contoso from '../../assets/Contoso.svg'
 import { HistoryButton, ShareButton } from '../../components/common/Button'
 import { AppStateContext } from '../../state/AppProvider'
 
@@ -71,7 +70,6 @@ const Layout = () => {
       <header className={styles.header} role={'banner'}>
         <Stack horizontal verticalAlign="center" horizontalAlign="space-between">
           <Stack horizontal verticalAlign="center">
-            <img src={ui?.logo ? ui.logo : Contoso} className={styles.headerIcon} aria-hidden="true" alt="" />
             <Link to="/" className={styles.headerTitleContainer}>
               <h1 className={styles.headerTitle}>{ui?.title}</h1>
             </Link>
@@ -97,11 +95,12 @@ const Layout = () => {
               selectors: {
                 ['@media (min-width: 480px)']: {
                   maxWidth: '600px',
-                  background: '#FFFFFF',
+                  background: '#0093a7',
                   boxShadow: '0px 14px 28.8px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.2)',
-                  borderRadius: '8px',
+                  borderRadius: '0',
                   maxHeight: '200px',
-                  minHeight: '100px'
+                  minHeight: '99px',
+                  color: '#EEF4F6'
                 }
               }
             }
